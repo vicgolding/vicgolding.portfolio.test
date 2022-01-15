@@ -35,7 +35,6 @@ header a{
 header a:hover{
   color:#cccccc;
   transition: 1s;
-
 }
 
 header li{
@@ -53,12 +52,6 @@ header nav{
   margin-top:15px;
 }
 
-/* Portfolio */
-
-#portfolio {
-  margin-top: 20px;
-}
-
 .container{
   width:100%;
   /* margin auto: move it to the middle */
@@ -68,30 +61,29 @@ header nav{
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1;
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  padding:20px;
+/* Portfolio */
+
+.portfolio-item {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   font-size:14px;
   text-align: center;
 }
 
-.container:hover .overlay {
-  opacity: 1;
+.highlight {
+  font-weight:bold;
 }
 
-.image {
+img {
+  filter:brightness(100%);
   display: block;
   width: 100%;
   height: auto;
 }
+
+img:hover{
+  filter:brightness(70%);
 
 /* About page */
 
