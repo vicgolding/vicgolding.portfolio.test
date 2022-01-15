@@ -8,15 +8,6 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
-.container{
-  width:100%;
-  /* margin auto: move it to the middle */
-  margin:auto;
-  /* display next to each other in a grid */
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
 .ul{
   margin:0;
   padding:0;
@@ -68,32 +59,38 @@ header nav{
   margin-top: 20px;
 }
 
-.portfolio-item {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.container{
+  width:100%;
+  /* margin auto: move it to the middle */
+  margin:auto;
+  /* display next to each other in a grid */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  padding:20px;
   font-size:14px;
   text-align: center;
 }
 
-.highlight {
-  font-weight:bold;
+.container:hover .overlay {
+  opacity: 1;
 }
 
-img {
-  filter:brightness(100%);
-}
-
-img:hover{
-  filter:brightness(70%);
-}
-
-.subtitle{
-  color: transparent;
-}
-
-.subtitle:hover{
-  color: white;
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* About page */
