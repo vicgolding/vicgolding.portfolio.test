@@ -84,6 +84,42 @@ img {
 
 img:hover{
   filter:brightness(70%);
+}
+/* Skillset */
+
+#skillset {
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+
+.skillbar {
+  background-color: rgb(192, 192, 192);
+  height: 15%;
+  width: 60%;
+  border-radius: 10px;
+}
+
+.skill {
+  background-color: black;
+  color: white;
+  padding: 1%;
+  text-align: right;
+  font-size: 14px;
+  height: 15%;
+  border-radius: 10px;
+}
+
+.html {
+  width: 100%;
+}
+
+.css {
+  width: 50%;
+}
+
+.js {
+  width: 50%;
+}
 
 /* About page */
 
